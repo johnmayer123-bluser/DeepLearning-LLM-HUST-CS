@@ -1,0 +1,9 @@
+# Local previews and machine-specific artifacts
+.DS_Store
+Thumbs.db
+node_modules/
+.env
+.env.*
+.preview/
+*.log
+__pycache__/
