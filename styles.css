@@ -150,7 +150,6 @@ h3 { font-size: 21px; font-weight: 700; }
 .schedule .section-heading--split h2 { font-size: 30px; white-space: nowrap; }
 .schedule .section-heading--split > div > span { border-left: 1px solid var(--ink); padding-left: 20px; font-family: Georgia, "Times New Roman", serif; font-size: 16px; letter-spacing: .035em; }
 .schedule .section-heading--split > p { margin: 0; display: flex; align-items: center; gap: 20px; white-space: nowrap; font-family: var(--sans); font-size: 14px; }
-.schedule .section-heading--split > p > a { border-left: 1px solid #6f7b86; padding-left: 20px; font-weight: 600; }
 .table-scroll { overflow-x: auto; border-radius: 5px 5px 0 0; }
 table { width: 100%; border-collapse: collapse; text-align: left; font-size: 17px; line-height: 1.45; }
 thead { background: #dfeef8; }
@@ -174,7 +173,6 @@ thead th { font-size: 17px; font-weight: 800; letter-spacing: .06em; }
 th:first-child { padding-left: 42px; }
 tbody tr { border-bottom: 1px solid var(--line); }
 tbody th { color: var(--hust-blue); font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: 21px; }
-.schedule-note { color: var(--muted); font-family: var(--sans); font-size: 13px; line-height: 1.7; padding: 12px 18px 0; }
 
 .team { min-height: 170px; padding: 29px 18px 34px; }
 .site-footer { margin-top: 6px; }
@@ -237,7 +235,6 @@ tbody th { color: var(--hust-blue); font-family: Georgia, "Times New Roman", ser
   .schedule .section-heading--split > div { gap: 14px; }
   .schedule .section-heading--split > div > span { padding-left: 14px; font-size: 13px; }
   .schedule .section-heading--split > p { gap: 12px; font-size: 12px; }
-  .schedule .section-heading--split > p > a { padding-left: 12px; }
   table { min-width: 760px; font-size: 16px; }
   th, td { padding: 8px 18px; }
   th:first-child { padding-left: 22px; }
@@ -269,8 +266,6 @@ tbody th { color: var(--hust-blue); font-family: Georgia, "Times New Roman", ser
   .schedule .section-heading--split h2 { font-size: 28px; }
   .schedule .section-heading--split > div > span { display: block; border: 0; padding: 0; margin-top: 4px; font-size: 11px; letter-spacing: .06em; }
   .schedule .section-heading--split > p { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; margin-top: 3px; font-size: 12px; }
-  .schedule .section-heading--split > p > a { padding: 0; border: 0; }
-  .schedule-note { padding-inline: 10px; font-size: 12px; }
   h2 { font-size: 29px; }
   .section-heading > p:not(.section-kicker) { font-size: 14px; line-height: 1.8; }
   .section-kicker { font-size: 12px; }
