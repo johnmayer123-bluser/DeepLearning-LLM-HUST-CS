@@ -103,38 +103,4 @@ ready(() => {
 
   const initialSection = window.location.hash.slice(1) || observedSections[0]?.id;
   if (initialSection) setCurrentSection(decodeURIComponent(initialSection));
-
-  let dialogTrigger = null;
-
-  document.addEventListener("click", (event) => {
-    const openButton = event.target.closest("[data-dialog-open]");
-    if (openButton) {
-      const dialog = document.getElementById(openButton.dataset.dialogOpen);
-      if (!(dialog instanceof HTMLDialogElement)) return;
-
-      dialogTrigger = openButton;
-      if (typeof dialog.showModal === "function") dialog.showModal();
-      else dialog.setAttribute("open", "");
-      document.body.classList.add("dialog-open");
-      return;
-    }
-
-    const closeButton = event.target.closest("[data-dialog-close]");
-    if (closeButton) {
-      const dialog = closeButton.closest("dialog");
-      if (dialog) dialog.close();
-    }
-  });
-
-  document.querySelectorAll("dialog").forEach((dialog) => {
-    dialog.addEventListener("click", (event) => {
-      if (event.target === dialog) dialog.close();
-    });
-
-    dialog.addEventListener("close", () => {
-      document.body.classList.remove("dialog-open");
-      if (dialogTrigger?.isConnected) dialogTrigger.focus();
-      dialogTrigger = null;
-    });
-  });
 });
