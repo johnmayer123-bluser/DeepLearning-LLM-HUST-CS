@@ -7,3 +7,9 @@ node_modules/
 .preview/
 *.log
 __pycache__/
+
+# Teaching source documents stay local; publish website content only.
+*.doc
+*.docx
+*.docm
+~$*.doc*

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="华中科技大学深度学习与大模型课程主页：课程导览、示例教学安排、实践项目与学习资源。">
+  <meta name="description" content="华中科技大学深度学习与大模型课程主页：2027 年春季教学安排、课程内容与学习资源。">
   <title>深度学习与大模型｜华中科技大学</title>
   <link rel="stylesheet" href="styles.css">
   <script type="module" src="script.js"></script>
@@ -62,66 +62,69 @@
       <div class="course-overview__main">
         <p class="section-kicker">ABOUT THE COURSE</p>
         <h2 id="overview-title">课程简介</h2>
-        <p class="course-overview__summary">系统学习深度学习的核心方法，理解大模型的训练与应用。结合数学推导、编程实验与课程项目，建立从基础原理到工程实践的完整知识脉络。</p>
+        <p class="course-overview__summary">课程从神经网络与语言模型基础出发，系统介绍大模型的预训练、微调与强化学习，并延伸至多模态、评估、智能体和前沿应用。</p>
         <ol class="module-summary" aria-label="课程知识模块">
-          <li><span class="module-summary__number">01</span><strong>基础与优化</strong><small>反向传播 · 梯度下降</small></li>
-          <li><span class="module-summary__number">02</span><strong>模型与架构</strong><small>CNN · Transformer</small></li>
-          <li><span class="module-summary__number">03</span><strong>大模型实践</strong><small>预训练 · 微调 · 对齐</small></li>
+          <li><span class="module-summary__number">01</span><strong>网络基础</strong><small>神经网络 · 语言模型</small></li>
+          <li><span class="module-summary__number">02</span><strong>训练与适配</strong><small>预训练 · 微调 · 强化学习</small></li>
+          <li><span class="module-summary__number">03</span><strong>多模态应用</strong><small>评估 · 智能体 · 前沿</small></li>
         </ol>
       </div>
 
       <aside class="notice-panel" aria-labelledby="notice-title">
         <div class="notice-panel__heading">
-          <h2 id="notice-title">课程公告</h2>
-          <span>示例内容</span>
+          <h2 id="notice-title">课程信息</h2>
+          <span>2027春季</span>
         </div>
-        <button class="notice-link" type="button" data-dialog-open="orientation-dialog"><span>课程导览与学习建议</span><span aria-hidden="true">→</span></button>
-        <button class="notice-link" type="button" data-dialog-open="setup-dialog"><span>实验环境与准备指南</span><span aria-hidden="true">→</span></button>
-        <div class="prerequisites">
-          <strong>先修基础</strong>
-          <span>Python / 线性代数 / 概率论</span>
-        </div>
+        <dl class="course-facts">
+          <div><dt>开课学期</dt><dd>2027春季</dd></div>
+          <div><dt>专业班级</dt><dd>强基2501、智科2501-2502</dd></div>
+          <div><dt>教学学时</dt><dd>32学时</dd></div>
+          <div><dt>任课教师</dt><dd>马志远</dd></div>
+        </dl>
       </aside>
     </section>
 
     <section class="schedule section-rule page-shell" id="schedule" aria-labelledby="schedule-title">
       <div class="section-heading section-heading--split">
         <div><h2 id="schedule-title">教学安排</h2><span lang="en">COURSE SCHEDULE</span></div>
-        <p><span>示例安排</span><a href="#schedule-notes">安排说明 <span aria-hidden="true">↗</span></a></p>
+        <p><span>2027春季</span><a href="#schedule-notes">安排说明 <span aria-hidden="true">↗</span></a></p>
       </div>
-      <div class="table-scroll" role="region" aria-label="示例教学安排表" tabindex="0">
-        <table>
-          <caption class="visually-hidden">深度学习与大模型课程示例安排；正式教学周次与材料待课程组确认</caption>
-          <thead><tr><th scope="col">单元</th><th scope="col">课程主题</th><th scope="col">学习资料</th><th scope="col">实践任务</th></tr></thead>
+      <div class="table-scroll" role="region" aria-label="2027 年春季教学日历" tabindex="0">
+        <table class="calendar-table">
+          <caption class="visually-hidden">深度学习与大模型课程 2027 年春季教学日历，共 16 节次、32 学时</caption>
+          <thead><tr><th scope="col">节次</th><th scope="col">教学内容</th><th scope="col">学时</th><th scope="col">任课教师</th></tr></thead>
           <tbody>
-            <tr><th scope="row">01</th><td>神经网络与反向传播</td><td><button class="table-link" type="button" data-dialog-open="unit01-dialog">导读 ↗</button><a href="https://docs.pytorch.org/tutorials/" target="_blank" rel="noopener noreferrer">教程 ↗<span class="visually-hidden">（在新窗口打开）</span></a></td><td>实现多层感知机</td></tr>
-            <tr><th scope="row">02</th><td>注意力机制与 Transformer</td><td><button class="table-link" type="button" data-dialog-open="unit02-dialog">导读 ↗</button><a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer">论文 ↗<span class="visually-hidden">（在新窗口打开）</span></a></td><td>搭建 Transformer</td></tr>
-            <tr><th scope="row">03</th><td>大模型预训练与微调</td><td><button class="table-link" type="button" data-dialog-open="unit03-dialog">导读 ↗</button><a href="https://huggingface.co/learn/llm-course/" target="_blank" rel="noopener noreferrer">教程 ↗<span class="visually-hidden">（在新窗口打开）</span></a></td><td>训练一个小型语言模型</td></tr>
+            <tr><th scope="row">01</th><td>课程简介，大模型概论</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">02</th><td>神经网络基础1：前馈、卷积、循环神经网络</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">03</th><td>神经网络基础2：Transformer及其应用</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">04</th><td>语言模型1：基本概念、统计语言模型、词向量、神经网络语言模型、Transformer模型</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">05</th><td>语言模型2：预训练语言模型</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">06</th><td>大模型的预训练：训练数据、损失函数和大模型架构</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">07</th><td>大模型的微调1：提示学习、指令微调、参数高效微调</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">08</th><td>大模型的微调2：参数高效微调原理</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">09</th><td>大模型的强化学习1：RLHF、奖励模型</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">10</th><td>大模型的强化学习2：PPO、大模型RL实践</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">11</th><td>多模态大模型1：概述、架构、训练原理</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">12</th><td>多模态大模型2：轻量适配原理与应用</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">13</th><td>大模型的评估维度、基准与指标</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">14</th><td>大模型的应用：典型应用、智能体技术</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">15</th><td>大模型的延伸：视觉与语音、具身模型、AI4Science科学模型</td><td>2</td><td>马志远</td></tr>
+            <tr><th scope="row">16</th><td>大模型的前沿研究与展望</td><td>2</td><td>马志远</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="schedule-note" id="schedule-notes"><strong>说明：</strong>以下为示例学习路线；正式教学安排、考核方式、截止时间与授课地点以课程组公告为准。</p>
+      <p class="schedule-note" id="schedule-notes"><strong>说明：</strong>教学日历修订于 2026 年 11 月 3 日。具体授课日期、地点与考核安排另行通知。</p>
     </section>
 
     <section class="assignments section-rule page-shell" id="assignments" aria-labelledby="assignments-title">
       <div class="section-heading">
         <p class="section-kicker">LEARN BY BUILDING</p>
         <h2 id="assignments-title">作业与项目</h2>
-        <p>用可复现的实验连接公式、模型行为与工程判断。以下为示例实践主题，正式要求随课程发布。</p>
+        <p>课程实践相关安排将在课程组确认后发布。</p>
       </div>
-      <div class="assignment-grid">
-        <article class="assignment-item">
-          <span class="assignment-item__index">A1</span>
-          <div><h3>从零实现反向传播</h3><p>推导并实现基础算子，使用数值梯度检查验证计算图。</p><ul><li>核心：自动微分与优化</li><li>提交物：代码、测试与短报告</li></ul></div>
-        </article>
-        <article class="assignment-item">
-          <span class="assignment-item__index">A2</span>
-          <div><h3>拆解 Transformer</h3><p>观察注意力权重、位置编码与掩码对序列建模的影响。</p><ul><li>核心：结构理解与消融</li><li>提交物：实验记录与结果分析</li></ul></div>
-        </article>
-        <article class="assignment-item assignment-item--project">
-          <span class="assignment-item__index">P</span>
-          <div><h3>课程项目：小模型完整实践</h3><p>围绕一个明确问题，完成数据、训练、评测和误差分析的闭环。</p><ul><li>强调：基线、可复现性与边界说明</li><li>题目及评分细则待课程组发布</li></ul></div>
-        </article>
+      <div class="assignment-status">
+        <strong>作业与项目安排待发布</strong>
+        <p>具体任务、提交要求、截止时间与考核方式以课程组后续通知为准。</p>
       </div>
     </section>
 
@@ -134,7 +137,7 @@
         <section class="resource-group" aria-labelledby="resource-notes-title">
           <h3 id="resource-notes-title">课程材料</h3>
           <ul class="resource-list">
-            <li><span><strong>课程大纲</strong><small>目标、模块与学习建议</small></span><button type="button" data-dialog-open="syllabus-dialog">查看摘要 →</button></li>
+            <li><span><strong>课程大纲</strong><small>教学内容与学时安排</small></span><button type="button" data-dialog-open="syllabus-dialog">查看摘要 →</button></li>
             <li><span><strong>课件与讲义</strong><small>正式文件待课程组上传</small></span><span class="status-tag">待更新</span></li>
             <li id="lab-code"><span><strong>实验代码</strong><small>配套实验代码将随教学进度发布</small></span><span class="status-tag">待更新</span></li>
           </ul>
@@ -154,12 +157,12 @@
       <div class="team__intro">
         <p class="section-kicker">TEACHING TEAM</p>
         <h2 id="team-title">教学团队</h2>
-        <p>教师与助教信息将在课程组确认后发布。课程相关问题可在正式教学平台开放后按公告渠道提交。</p>
+        <p>本课程 2027 年春季任课教师信息如下；助教安排与答疑信息以课程组后续通知为准。</p>
       </div>
-      <div class="team-placeholder" aria-label="教学团队信息状态">
+      <div class="team-profile" aria-label="任课教师信息">
         <span aria-hidden="true">HUST · CS</span>
-        <strong>信息待课程组确认</strong>
-        <p>授课教师、助教安排与答疑信息将随开课通知公布。</p>
+        <strong>马志远</strong>
+        <p>《深度学习与大模型》任课教师</p>
       </div>
     </section>
   </main>
@@ -168,34 +171,9 @@
     <div class="page-shell"><span>华中科技大学 · 深度学习与大模型</span><span>课程主页 · 内容持续建设中</span></div>
   </footer>
 
-  <dialog class="course-dialog" id="orientation-dialog" aria-labelledby="orientation-dialog-title">
-    <div class="course-dialog__header"><h2 id="orientation-dialog-title">课程导览与学习建议</h2><button type="button" data-dialog-close aria-label="关闭对话框">×</button></div>
-    <div class="course-dialog__body"><p>建议按“概念推导—最小实现—对照实验—误差分析”的顺序学习。每个模块先明确输入、输出和目标函数，再用小规模实验验证理解。</p><p class="dialog-note">本内容为主页示例导览，正式学习要求以课程组公告为准。</p></div>
-  </dialog>
-
-  <dialog class="course-dialog" id="setup-dialog" aria-labelledby="setup-dialog-title">
-    <div class="course-dialog__header"><h2 id="setup-dialog-title">实验环境准备指南</h2><button type="button" data-dialog-close aria-label="关闭对话框">×</button></div>
-    <div class="course-dialog__body"><ol><li>准备可用的 Python 环境并熟悉虚拟环境。</li><li>完成基础张量运算与自动微分练习。</li><li>记录依赖版本和随机种子，保证实验可复现。</li></ol><p class="dialog-note">具体 Python、CUDA 与框架版本待课程组统一后发布。</p></div>
-  </dialog>
-
   <dialog class="course-dialog" id="syllabus-dialog" aria-labelledby="syllabus-dialog-title">
     <div class="course-dialog__header"><h2 id="syllabus-dialog-title">课程大纲摘要</h2><button type="button" data-dialog-close aria-label="关闭对话框">×</button></div>
-    <div class="course-dialog__body"><p>课程围绕三个递进模块展开：基础与优化、模型与架构、大模型实践。每个模块都结合原理理解、代码实现与实验分析。</p><p class="dialog-note">正式学时、考核构成与参考教材待课程组确认。</p></div>
-  </dialog>
-
-  <dialog class="course-dialog" id="unit01-dialog" aria-labelledby="unit01-dialog-title">
-    <div class="course-dialog__header"><h2 id="unit01-dialog-title">单元 01 导读：神经网络与反向传播</h2><button type="button" data-dialog-close aria-label="关闭对话框">×</button></div>
-    <div class="course-dialog__body"><ul><li>能写出线性层、激活函数与损失函数的前向计算。</li><li>能用链式法则推导两层网络的参数梯度。</li><li>能使用有限差分做梯度检查，并解释数值误差来源。</li><li>能比较学习率变化对损失曲线和收敛状态的影响。</li></ul><p class="dialog-note">这是示例学习导读，正式范围与提交要求以课程公告为准。</p></div>
-  </dialog>
-
-  <dialog class="course-dialog" id="unit02-dialog" aria-labelledby="unit02-dialog-title">
-    <div class="course-dialog__header"><h2 id="unit02-dialog-title">单元 02 导读：注意力机制与 Transformer</h2><button type="button" data-dialog-close aria-label="关闭对话框">×</button></div>
-    <div class="course-dialog__body"><ul><li>能说明查询、键和值在缩放点积注意力中的作用。</li><li>能根据序列长度判断注意力矩阵的形状与因果掩码位置。</li><li>能解释多头注意力、残差连接和位置编码各自解决的问题。</li><li>能用小样本实验验证掩码是否阻止模型读取未来 token。</li></ul><p class="dialog-note">这是示例学习导读，正式范围与提交要求以课程公告为准。</p></div>
-  </dialog>
-
-  <dialog class="course-dialog" id="unit03-dialog" aria-labelledby="unit03-dialog-title">
-    <div class="course-dialog__header"><h2 id="unit03-dialog-title">单元 03 导读：大模型预训练与微调</h2><button type="button" data-dialog-close aria-label="关闭对话框">×</button></div>
-    <div class="course-dialog__body"><ul><li>能把自回归语言建模写成下一 token 预测目标。</li><li>能区分预训练、指令微调与下游任务适配的训练数据和目标。</li><li>能记录数据划分、随机种子与依赖版本，复现一次小模型训练。</li><li>能同时报告训练损失、验证损失和定性样例，并分析过拟合迹象。</li></ul><p class="dialog-note">这是示例学习导读，正式范围与提交要求以课程公告为准。</p></div>
+    <div class="course-dialog__body"><p>课程共 32 学时，涵盖神经网络与语言模型基础，大模型预训练、微调与强化学习，多模态大模型、评估、智能体、延伸应用和前沿研究。</p><p class="dialog-note">具体授课日期、地点、考核方式与课程材料以课程组后续通知为准。</p></div>
   </dialog>
 </body>
 </html>
