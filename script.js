@@ -58,6 +58,20 @@ ready(() => {
     .map((link) => document.getElementById(decodeURIComponent(link.hash.slice(1))))
     .filter(Boolean);
 
+  const moveNavigationHighlight = () => {
+    const current = navigation?.querySelector(".is-active");
+    if (!current || !desktopMenu.matches) return;
+    navigation.style.setProperty("--nav-left", `${current.offsetLeft}px`);
+    navigation.style.setProperty("--nav-width", `${current.offsetWidth}px`);
+  };
+  if (navigation) {
+    new ResizeObserver(moveNavigationHighlight).observe(navigation);
+    document.fonts.ready.then(moveNavigationHighlight);
+    navigationLinks.forEach((link) => {
+      link.addEventListener("click", () => setCurrentSection(decodeURIComponent(link.hash.slice(1))));
+    });
+  }
+
   const setCurrentSection = (sectionId) => {
     navigationLinks.forEach((link) => {
       const isCurrent = decodeURIComponent(link.hash.slice(1)) === sectionId;
@@ -66,6 +80,7 @@ ready(() => {
       if (isCurrent) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");
     });
+    moveNavigationHighlight();
   };
 
   if (observedSections.length && "IntersectionObserver" in window) {
